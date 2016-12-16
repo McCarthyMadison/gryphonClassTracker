@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_statistics"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.madison.mapexample.Statistics"
+    tools:showIn="@layout/activity_statistics">
+
+    <Spinner
+        android:id="@+id/class_spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:text="Select a Class from the list:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView14"
+        android:textColor="@color/bpblack" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button12"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="backHome"
+        android:textColor="@color/bpblack" />
+
+    <TextView
+        android:text="Missed:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView16"
+        android:textColor="@color/bpblack" />
+
+    <TextView
+        android:text="Unsure:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView17"
+        android:textColor="@color/bpblack" />
+
+    <TextView
+        android:text="Attended:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/class_spinner"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/bpblack" />
+
+    <TextView
+        android:text="Worst Class:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView19"
+        android:textColor="@color/bpblack" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignStart="@+id/attended"
+        android:id="@+id/missed"
+        android:textColor="@color/bpblack" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignStart="@+id/missed"
+        android:id="@+id/unsure"
+        android:textColor="@color/bpblack" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/best"
+        android:layout_above="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/bpblack" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignStart="@+id/best"
+        android:id="@+id/worst"
+        android:textColor="@color/bpblack" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attended"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignStart="@+id/best"
+        android:textColor="@color/bpblack" />
+
+    <TextView
+        android:text="Best Class:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:textColor="@color/bpblack"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:numStars="5"
+        android:rating="3.5"
+        style="@style/foodRatingBar"
+        android:isIndicator="true"
+        android:layout_marginTop="13dp"
+        android:layout_alignTop="@+id/class_spinner"
+        android:layout_toEndOf="@+id/button12" />
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        tools:context="lecho.lib.hellocharts.samples.PieChartActivity"
+        tools:ignore="MergeRootFrame"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/best"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

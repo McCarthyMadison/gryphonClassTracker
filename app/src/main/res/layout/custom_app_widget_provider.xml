@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    android:padding="@dimen/widget_margin">
+
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="8dp"
+        android:background="#b70222"
+        android:contentDescription="@string/appwidget_text"
+        android:text="Gryphon Class Tracker"
+        android:textColor="#ffffff"
+
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:text="No classes are scheduled!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:background="#b70222"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/appwidget_text"
+        android:layout_alignStart="@+id/appwidget_text"
+        android:id="@+id/textViewWidget" />
+
+
+
+</RelativeLayout>

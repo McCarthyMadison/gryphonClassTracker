@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">MapExample</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_splash">Splash</string>
+
+    <string name="UC_Lat">43.53050160315066</string>
+    <string name="UC_Lon">-80.22627711296082</string>
+    <string name="UC_Name">University Center</string>
+
+    <string name="ROZ_Lat">43.53224395999052</string>
+    <string name="ROZ_Lon">-80.2258050441742</string>
+    <string name="ROZ_Name">Rozanksi Hall</string>
+
+    <string name="MCL_Lat">43.53151590991344</string>
+    <string name="MCL_Lon">-80.22770404815674</string>
+    <string name="MCL_Name">Mclaughlin Library</string>
+
+    <string name="RICH_Lat">43.531522132624254</string>
+    <string name="RICH_Lon">-80.22524178028107</string>
+    <string name="RICH_Name">Richards</string>
+
+    <string name="THRN_1006_Lat">43.530075340603474</string>
+    <string name="THRN_1006_Lon">-80.22451221942902</string>
+    <string name="THRN_1006_Name">Thornbrough 1006</string>
+
+    <string name="THRN_Lat">43.530635393126005</string>
+    <string name="THRN_Lon">-80.22451221942902</string>
+    <string name="THRN_Name">Thornbrough</string>
+
+    <string name="JTP_Lat">43.53348224697629</string>
+    <string name="JTP_Lon">-80.2249950170517</string>
+    <string name="JTP_Name">John T. Powell</string>
+
+    <string name="CROP_Lat">43.531911049173</string>
+    <string name="CROP_Lon">-80.22463023662567</string>
+    <string name="CROP_Name">Crop Science</string>
+
+    <string name="ALEX_N_Lat">43.52971752635246</string>
+    <string name="ALEX_N_Lon">-80.22772014141083</string>
+    <string name="ALEX_N_Name">Alexander North</string>
+
+    <string name="ALEX_S_Lat">43.52933637418092</string>
+    <string name="ALEX_S_Lon">-80.22715151309967</string>
+    <string name="ALEX_S_Name">Alexander South</string>
+
+    <string name="ALEX_Lat">43.52935193145957</string>
+    <string name="ALEX_Lon">-80.22764503955841</string>
+    <string name="ALEX_Name">Alexander</string>
+
+    <string name="SCI_Lat">43.53093875280196</string>
+    <string name="SCI_Lon">-80.22814929485321</string>
+    <string name="SCI_Name">Science Complex</string>
+
+    <string name="MCN_Lat">43.53082207618409</string>
+    <string name="MCN_Lon">-80.22767722606659</string>
+    <string name="MCN_Name">MacNaughton</string>
+
+    <string name="ZAV_Lat">43.531016537088504</string>
+    <string name="ZAV_Lon">-80.2272480726242</string>
+    <string name="ZAV_Name">Zavitz Hall</string>
+
+    <string name="MACK_S_Lat">43.53225329376574</string>
+    <string name="MACK_S_Lon">-80.22686183452606</string>
+    <string name="MACK_S_Name">MacKinnon South</string>
+
+    <string name="MACK_N_Lat">43.5327666570133</string>
+    <string name="MACK_N_Lon">-80.2274626493454</string>
+    <string name="MACK_N_Name">MacKinnon North</string>
+
+    <string name="REY_Lat">43.530736513187534</string>
+    <string name="REY_Lon">-80.2290290594101</string>
+    <string name="REY_Name">Reynolds</string>
+
+    <string name="MAC_Lat">43.534112270359635</string>
+    <string name="MAC_Lon">-80.23124992847443</string>
+    <string name="MAC_Name">MacDonald Hall</string>
+
+    <string name="GRHM_Lat">43.52816956684662</string>
+    <string name="GRHM_Lon">-80.22789180278778</string>
+    <string name="GRHM_Name">Graham Hall</string>
+
+    <string name="ANSCI_Lat">43.5295308398755</string>
+    <string name="ANSCI_Lon">-80.22965133190155</string>
+    <string name="ANSCI_Name">Animal Science</string>
+
+    <string name="OVC_Lat">43.5300908975728</string>
+    <string name="OVC_Lon">-80.23333132266998</string>
+    <string name="OVC_Name">Ontario Veterinary College</string>
+
+    <string name="MINS_Lat">43.534228940612266</string>
+    <string name="MINS_Lon">-80.23210823535919</string>
+    <string name="MINS_Name">MacDonald Institude</string>
+
+    <string name="WMEM_Lat">43.53258775819583</string>
+    <string name="WMEM_Lon">-80.23135721683502</string>
+    <string name="WMEM_Name">War Memorial</string>
+
+    <string name="MASS_Lat">43.53182548772134</string>
+    <string name="MASS_Lon">-80.22848188877106</string>
+    <string name="MASS_Name">Massey Hall</string>
+
+    <string name="MACL_Lat">43.531288781301264</string>
+    <string name="MACL_Lon">-80.22863209247589</string>
+    <string name="MACL_Name">MacLachlan</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_schedule_input">ScheduleInput</string>
+    <string name="title_activity_view_schedule">viewSchedule</string>
+    <string name="appwidget_text">GRYPHON CLASS TRACKER</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_statistics">Statistics</string>
+
+
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.madison.mapexample.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:src="@drawable/gryphons_logo_no_background"/>
+        />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Statistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="183dp"
+            android:id="@+id/button4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:elevation="0dp"
+            android:textColor="@color/wallet_bright_foreground_holo_light"
+            android:onClick="goStats" />
+
+        <Button
+            android:text="Modify Schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button4"
+            android:layout_alignStart="@+id/button4"
+            android:id="@+id/button5"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColorLink="?attr/actionModeSplitBackground"
+            android:textColor="@color/wallet_bright_foreground_holo_light"
+            android:onClick="modifySchedule" />
+
+        <Button
+            android:text="Campus Map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button5"
+            android:layout_alignStart="@+id/button5"
+            android:id="@+id/button6"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@color/wallet_bright_foreground_holo_light"
+            android:onClick="campusMap" />
+
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/button6"
+            android:layout_alignStart="@+id/button6"
+            android:layout_marginStart="50dp"
+            android:layout_alignEnd="@+id/textView2"
+            >
+
+            <fragment
+                android:layout_width="232dp"
+                android:layout_height="150dp"
+                android:id="@+id/fragment0"
+                android:name="com.example.madison.mapexample.MapViewFragment"
+               />
+
+
+        </FrameLayout>
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_marginTop="83dp"
+            android:id="@+id/textClock"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Current Time:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_alignBaseline="@+id/textClock"
+            android:layout_alignBottom="@+id/textClock"
+            android:layout_toStartOf="@+id/textClock"
+            android:layout_marginEnd="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:text="0:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeText"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignStart="@+id/textClock" />
+
+        <TextView
+            android:text="Finding Location..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:id="@+id/textView"
+            android:fontFamily="cursive"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button6" />
+
+
+        <TextView
+            android:text="Next Class:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_below="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CName"
+            android:textColor="@color/bpblack"
+            android:layout_below="@+id/textView4"
+            android:layout_alignStart="@+id/textView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dayText"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_below="@+id/CName"
+            android:layout_alignStart="@+id/CName" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            style="@style/foodRatingBar"
+            android:isIndicator="true"
+            android:layout_below="@+id/dayText"
+            android:layout_alignStart="@+id/dayText" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
