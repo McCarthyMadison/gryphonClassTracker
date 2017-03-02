@@ -1,5 +1,6 @@
-# Gryphon Class Tracker Android Application
+<img src="/readme_images/fragment1.png?raw=true" alt="Home Screen" width="360" height="640">
 
+# Gryphon Class Tracker Android Application
 
 ### Introduction
 
